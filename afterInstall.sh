@@ -63,3 +63,8 @@ sudo usermod -a -G rvm $USER
 
 echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 
+
+
+# activate minimise on click
+
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
