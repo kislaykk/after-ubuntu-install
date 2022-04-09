@@ -51,17 +51,12 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash 
 
 
 
-# install rvm -> ruby version manager
-
-sudo apt-get install software-properties-common
-
-sudo apt-add-repository -y ppa:rael-gc/rvm
-sudo apt-get update
-sudo apt-get install rvm
-
-sudo usermod -a -G rvm $USER
-
-echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
+# install rbenv -> ruby version manager
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+cd ~/.rbenv && src/configure && make -C src
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'follow the next step as said'
+~/.rbenv/bin/rbenv init
 
 
 
