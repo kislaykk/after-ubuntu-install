@@ -48,6 +48,9 @@ sudo apt install curl || true
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash || true
 
+
+
+
 # install rvm -> ruby version manager
 
 sudo apt-get install software-properties-common
