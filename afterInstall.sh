@@ -61,3 +61,5 @@ sudo apt-get install rvm
 
 sudo usermod -a -G rvm $USER
 
+echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
+
